@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainSearchBackground"
+    tools:context=".MainScreenFragment">
+
+
+            <LinearLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="Hello!"
+                        android:textAlignment="textEnd"
+                        android:textSize="75sp" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/hint_text"
+                        android:textAlignment="textEnd"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_thin"
+                        android:text="swipe up from the bottom"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="60dp"
+                app:shimmer_auto_start="true"
+                app:shimmer_direction="bottom_to_top"
+                app:shimmer_duration="2000"
+                app:shimmer_highlight_alpha=".70">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:alpha=".75"
+                    android:src="@drawable/triangle" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_text_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="55dp"
+                app:shimmer_auto_start="true"
+                app:shimmer_direction="bottom_to_top"
+                app:shimmer_duration="2000"
+                app:shimmer_highlight_alpha=".70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha=".75"
+                    android:fontFamily="@font/roboto_thin"
+                    android:text="Swipe Up" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <include
+                android:id="@+id/drawer"
+                layout="@layout/layout_bottom_sheet" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/profileLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/avatar"
+        android:transitionName="@string/fab_circular_reveal"
+        app:backgroundTint="@color/teacherLoginBackground"
+        app:fabSize="normal"
+        app:layout_anchor="@id/drawer"
+        app:layout_anchorGravity="bottom|end"
+        tools:src="@drawable/avatar"
+        tools:targetApi="lollipop" />
+
+</android.support.design.widget.CoordinatorLayout>

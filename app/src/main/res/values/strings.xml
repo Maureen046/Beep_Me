@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Beep Me</string>
+
+    <string name="hint_text">Looking\nfor someone?</string>
+    <string name="search">GO</string>
+    <string name="browse">Browse list of teachers</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Teacher?\nLog In Here</string>
+    <string name="email_here">Email</string>
+    <string name="password_here">Password</string>
+
+    <string name="search_result">Showing search results for:</string>
+
+
+    <string name="fab_circular_reveal" />
+
+    <string name="credits">
+        Developed by Maureen Kate Dadap
+        \nJanela Kathleen Lozada
+        \nJeus Miguel Garcia
+        \nDylan Charen Ramo
+        \nJohn Christopher Torcelino
+        \nLaica Rose Leron
+        \nRay Angelo Boton
+    </string>
+
+    <string name="description">
+        Beep Me was created by students from ITMAW22, A.Y. 2018-2019, for the purposes of their research:
+                            "Beep Me: A Faculty Information and Status Notifier Application for STI College Calamba"
+    </string>
+</resources>

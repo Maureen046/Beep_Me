@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/mainSearchBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="AppTheme">
+        <item name ="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="TeacherLoginTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/teacherLoginColorDark</item>
+    </style>
+
+    <style name="ProfileActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/teacherLoginBackground</item>
+    </style>
+
+    <style name="BrowseGenderTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/browseGenderDark</item>
+        <item name="colorPrimary">@color/browseGenderBackground</item>
+    </style>
+
+    <style name="BrowseMaleTeachers" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/maleBrowseDark</item>
+        <item name="colorPrimary">@color/maleBackground</item>
+    </style>
+
+    <style name="BrowseFemaleTeachers" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/femaleBrowseDark</item>
+        <item name="colorPrimary">@color/femaleBackground</item>
+    </style>
+
+    <style name="SearchResultsTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorYellowDarker</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="LogInProgressDialog" parent="Base.Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorAccent">@color/mainSearchBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/teacherLoginBackground</item>
+    </style>
+
+    <style name="ChangePasswordAlertDialog" parent="Base.Theme.MaterialComponents.Dialog.Alert">
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+        <item name="android:background">@color/teacherLoginBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/mainSearchBackground</item>
+    </style>
+
+    <style name="BeepActivity" parent="AppTheme">
+        <item name="colorPrimary">@color/teacherLoginBackground</item>
+        <item name="colorPrimaryDark">@color/teacherLoginColorDark</item>
+    </style>
+
+    <style name="BeepDialog" parent="Base.Theme.AppCompat.Dialog.Alert">
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grades">
+        <item>Grade 11</item>
+        <item>Grade 12</item>
+    </string-array>
+
+    <string-array name="sections11">
+        <item>TOP 1</item>
+        <item>CULARTS 1</item>
+        <item>GAS 1</item>
+        <item>ABM 1</item>
+        <item>ITMAWD 1</item>
+        <item> ITMAWD 2</item>
+        <item>ITMAWD 3</item>
+        <item>STEM 1</item>
+        <item>STEM 2</item>
+        <item>STEM 3</item>
+    </string-array>
+
+    <string-array name="sections12">
+        <item>CULARTS 1</item>
+        <item>TOP 1</item>
+        <item>HOP 1</item>
+        <item>GAS 1</item>
+        <item>ABM 1</item>
+        <item>ABM 2</item>
+        <item>ABM 3</item>
+        <item>ITMAWD 1</item>
+        <item>ITMAWD 2</item>
+        <item>ITMAWD 3</item>
+        <item>STEM 1</item>
+        <item>STEM 2</item>
+        <item>STEM 3</item>
+        <item>STEM 4</item>
+    </string-array>
+</resources>

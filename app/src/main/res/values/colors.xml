@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF7E1</color>
+    <color name="colorPrimaryDark">#ffc927</color>
+    <color name="colorAccent">#3C51B2</color>
+
+    <color name="colorYellowDark">#B29F63</color>
+
+    <color name="mainSearchBackground">#FCE67C</color>
+    <color name="teacherLoginBackground">#3D3D4B</color>
+    <color name="teacherLoginColorDark">#21242D</color>
+    <color name="hintColorLogin">#919183</color>
+
+    <color name="browseGenderBackground">#faf8de</color>
+    <color name="browseGenderDark">#d7d398</color>
+    <color name="maleBackground">#4c768c</color>
+    <color name="maleBrowseDark">#385666</color>
+    <color name="femaleBackground">#de5750</color>
+    <color name="femaleBrowseDark">#A43E39</color>
+
+    <color name="colorYellowDarker">#FDDE47</color>
+    <color name="projectGreen">#89DA91</color>
+
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- the following are the colors to be used for login screen text input layouts -->
+    <color name="error_color">#C62828</color>
+    <color name="hint_color_active">#fff7e1</color>
+    <color name="hint_color_inactive">#29292b</color>
+
+    <color name="popup_background">#99000000</color>
+
+</resources>

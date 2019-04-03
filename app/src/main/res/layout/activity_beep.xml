@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beepActivityParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellowDarker"
+    tools:context=".Activities.BeepActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/closeButton"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_close_black_24dp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/sendBeepLanding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:layout_weight="0"
+                            android:fontFamily="@font/roboto_thin"
+                            android:text="Here you can send a teacher a notification that you are needing consultation AND that you are at the mezzanine area waiting."
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_black"
+                                android:text="Beep"
+                                android:textColor="@color/white"
+                                android:textSize="80sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="top"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/beepLastNameLanding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_weight="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="TextView"
+                                    android:textAlignment="center"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/beepFirstNameLanding"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="TextView"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Who is beeping?"
+                            android:textAlignment="center"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="26dp">
+
+                            <Spinner
+                                android:id="@+id/gradeLevelSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="0"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/sectionsSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:spinnerMode="dropdown" />
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
+                                android:id="@+id/beeperNameLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <android.support.design.widget.TextInputEditText
+                                    style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                                    android:id="@+id/beeperEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:ems="10"
+                                    android:hint="Name"
+                                    android:inputType="textPersonName"
+                                    android:selectAllOnFocus="true"
+                                    android:singleLine="true" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/beeperTextview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_black"
+                        android:padding="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/nextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:backgroundTint="@color/teacherLoginBackground"
+                        android:text="Next" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
